@@ -20,7 +20,7 @@ public class SetBrowser {
     @Before
     public void startUp() {
         WebDriverManager.chromedriver().setup();
-        selectBrowser(yandexBrowser);
+        selectBrowser(yandexBrowser);//selectBrowser(chromeBrowser); для запуска в chrome
         mainPage = new HomePage(driver);
         driver.get(url);
         driver.manage().window().maximize();
